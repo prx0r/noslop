@@ -1,0 +1,202 @@
+You are revising an essay to remove AI-slop writing patterns while preserving its meaning, voice, and length.
+
+DIAGNOSTIC REPORT (from a pattern detector):
+[
+ {
+  "tag": "3LIST",
+  "matched_text": "But this phase, however intoxicating, is the rehearsal,"
+ },
+ {
+  "tag": "3LIST",
+  "matched_text": "it demands skill, patience, and a willingness to revise"
+ },
+ {
+  "tag": "3LIST",
+  "matched_text": "called love an art, and like any art, it demands skill,"
+ },
+ {
+  "tag": "NEG",
+  "matched_text": "not a problem to be solved but a space to be i",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": "not perfection but the possibility of b",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": " not a problem to be solved but ",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": "not naturally good at it. W",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": "Not as we wish to be, but a",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": "not what we think it is. W",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": "not the performance. W",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": "not permanently, but o",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": " not perfection but ",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": "not cruelty. I",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": ", not t",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ },
+ {
+  "tag": "NEG",
+  "matched_text": ", not p",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "repairs": [
+   "State what it IS. No negation, no implied negation.",
+   "Dismiss without the negate-then-assert rhythm."
+  ]
+ }
+]
+
+PATTERN BUDGETS (long-form):
+{
+ "NEG": {
+  "name": "Negat-assert-itis",
+  "definition": "The sentence clears ground by negating a wrong view before asserting the right one: 'Not X, but Y.'",
+  "why_slop": "The negation is scaffolding, not meaning. Readers learn to skip the first half of every sentence and the prose feels defensive rather than confident.",
+  "disguises": [
+   "fragment: 'Not X. Y.'",
+   "clause: 'X, not Y'",
+   "imperative: 'Forget X. Y.'",
+   "condition: 'Without X, Y.'",
+   "substitution: 'Instead of X, Y'",
+   "lack: 'What X lacks is Y'",
+   "insufficiency: 'X alone cannot Y'",
+   "comparison: 'The difference between X and Y...'",
+   "staging: wrong idea in sentence 1, correction in sentence 2"
+  ],
+  "repairs": [
+   {
+    "tool": "flat_assertion",
+    "hint": "State what it IS. No negation, no implied negation.",
+    "before": "Not projections of the psyche, but presences encountered in a realm.",
+    "after": "Presences encountered in a realm."
+   },
+   {
+    "tool": "forget_opener",
+    "hint": "Dismiss without the negate-then-assert rhythm.",
+    "before": "The imagination is not fantasy or daydreaming.",
+    "after": "Forget the imagination you think you know. Corbin means something else entirely."
+   },
+   {
+    "tool": "question_answer",
+    "hint": "Let the question do the negating implicitly.",
+    "before": "Not the senses. Not the intellect. A third faculty.",
+    "after": "What organ sees it? The active Imagination."
+   },
+   {
+    "tool": "fragment_momentum",
+    "hint": "Noun fragments carrying weight, verbless.",
+    "after": "Theophanic visions. Dreams. Meditative states."
+   },
+   {
+    "tool": "concrete_image",
+    "hint": "Show the consequence instead of negating.",
+    "before": "X is not academic; it determines how you live.",
+    "after": "You either study the imaginal world or you live in it."
+   },
+   {
+    "tool": "positive_after_negation",
+    "hint": "If the negation is essential, keep it but put the positive assertion immediately after, joined by an em-dash.",
+    "after": "The eye is not a passive receiver \u2014 it participates in what it sees."
+   }
+  ],
+  "budget_long": "Permitted only with all three: named target (not straw man), evidence 
+
+REPAIR SEQUENCING RULES:
+- Fix the ending FIRST, then work forward.
+- One sentence at a time: change it, re-read the surrounding 2-3 sentences, check the fix didn't introduce a new pattern; undo and try a different approach if it did.
+- After fixing any NEG: verify you did NOT invert the meaning (see semantic_inversion_warning).
+- Rotate repair tools: never resolve two consecutive hits the same way.
+- If more than 5 patterns total: don't spot-fix — rewrite the worst-hit sentences entirely.
+- Re-run detection after repairs; iterate until clean.
+- Overcorrection check: a rule-correct fix that drains the drama is still a failure — escalate to a stronger tool rather than accepting dead prose. Restore one concrete noun, vivid verb, or unexpected modifier where a fix flattened life.
+
+ORIGINAL ESSAY:
+Love is not what we think it is. We spend our lives assembling definitions from song lyrics and film endings, from greeting cards and the fumbling words of people who were also guessing. But love, when it arrives, refuses every framework we have prepared for it. It is less a feeling than a discipline, less a destination than a practice performed in ordinary rooms under ordinary light.
+
+We tend to imagine love as an overwhelming force, something that overtakes us. And there is truth in that. The early hours of love carry a reckless electricity, a willingness to dissolve the borders of the self and merge with another consciousness. But this phase, however intoxicating, is the rehearsal, not the performance. What follows is harder and quieter and more worthy of our attention: the slow, deliberate choice to remain present with another human being who will disappoint you, who will fail to read your mind, who will leave the cupboard open and the light on and the metaphors half-finished.
+
+To love someone over time is to watch your own impatience in a mirror. It is to discover, again and again, that the distance between your expectations and another person's reality is not a problem to be solved but a space to be inhabited. The philosopher Erich Fromm called love an art, and like any art, it demands skill, patience, and a willingness to revise. We are not naturally good at it. We are naturally defensive, self-protective, anxious about abandonment. Love asks us to set those instincts down, not permanently, but often enough that something else can grow in the clearing.
+
+There is also the matter of love's grief. Every act of deep affection contains within it the knowledge that it will end — through change, through distance, through the simple and irreversible passage of time. The Japanese poets understood this. Their cherry blossoms were never only about beauty. They were about the beauty that is inseparable from loss. To love well is to hold both the warmth and the ache in the same hand, and to refuse the false comfort of pretending one without the other.
+
+Perhaps the truest thing we can say about love is that it reveals us. Not as we wish to be, but as we are. It strips away the narrative we have constructed about our own patience and kindness and shows us the raw material underneath. This is not cruelty. It is invitation. Love holds up a mirror and says, gently, *look*. And if we are brave enough to look, we find not perfection but the possibility of becoming more fully ourselves, which may be the only transformation worth pursuing.
+
+TASK: Rewrite the essay fixing every flagged pattern using the suggested repair strategies. Keep the same argument, imagery, and roughly the same length (444 words +/- 10%). Do not introduce new listed patterns. Prefer concrete nouns over abstractions. Output ONLY the rewritten essay - no preamble, no commentary, no explanations.

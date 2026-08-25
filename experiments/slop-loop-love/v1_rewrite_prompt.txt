@@ -1,0 +1,71 @@
+You are revising an essay to remove AI-slop writing patterns while preserving its meaning, voice, and length.
+
+DIAGNOSTIC REPORT (from a pattern detector):
+[
+ {
+  "tag": "3LIST",
+  "matched_text": "But this phase, however intoxicating, is only the beginning."
+ },
+ {
+  "tag": "NARR",
+  "matched_text": "he place",
+  "why_slop": "The reader came for content, not a tour guide. Narration puts a layer of glass between reader and idea, and signals summary rather than claim.",
+  "repairs": [
+   "Delete the narration clause and state the idea directly. If nothing remains, there was no claim.",
+   "Vary the subject: lead with the concept, not the author."
+  ]
+ }
+]
+
+PATTERN BUDGETS (long-form):
+{
+ "NARR": {
+  "name": "Narratitivitis",
+  "definition": "The sentence narrates what the text or author does instead of stating the idea directly.",
+  "why_slop": "The reader came for content, not a tour guide. Narration puts a layer of glass between reader and idea, and signals summary rather than claim.",
+  "disguises": [
+   "self-narration: 'The paper opens with...'",
+   "author-narration: 'X introduces / develops / argues...'",
+   "section-narration: 'This section examines...'",
+   "collective-narration: 'We now turn to...'",
+   "preview-narration: 'What follows is an analysis of...'"
+  ],
+  "repairs": [
+   {
+    "tool": "delete_and_state",
+    "hint": "Delete the narration clause and state the idea directly. If nothing remains, there was no claim.",
+    "before": "The paper opens with alchemy, and the choice is deliberate.",
+    "after": "Alchemy is the controlling metaphor for everything that follows."
+   },
+   {
+    "tool": "lead_with_concept",
+    "hint": "Vary the subject: lead with the concept, not the author.",
+    "before": "Ibn Arabi develops the idea of barzakh...",
+    "after": "Barzakh is the whole theology compressed into a single word."
+   }
+  ],
+  "budget_long": "Max one orienting narration per 500 words. Test: is it doing orienting work (telling the reader where they are) or padding?"
+ }
+}
+
+REPAIR SEQUENCING RULES:
+- Fix the ending FIRST, then work forward.
+- One sentence at a time: change it, re-read the surrounding 2-3 sentences, check the fix didn't introduce a new pattern; undo and try a different approach if it did.
+- After fixing any NEG: verify you did NOT invert the meaning (see semantic_inversion_warning).
+- Rotate repair tools: never resolve two consecutive hits the same way.
+- If more than 5 patterns total: don't spot-fix — rewrite the worst-hit sentences entirely.
+- Re-run detection after repairs; iterate until clean.
+- Overcorrection check: a rule-correct fix that drains the drama is still a failure — escalate to a stronger tool rather than accepting dead prose. Restore one concrete noun, vivid verb, or unexpected modifier where a fix flattened life.
+
+ORIGINAL ESSAY:
+Love arrives differently than we expect. We spend our lives assembling definitions from song lyrics and film endings, from greeting cards and the fumbling words of people who were also guessing. But love, when it arrives, refuses every framework we have prepared for it. It is less a feeling than a discipline, less a destination than a practice performed in ordinary rooms under ordinary light.
+
+We tend to imagine love as an overwhelming force, something that overtakes us. And there is truth in that. The early hours of love carry a reckless electricity, a willingness to dissolve the borders of the self and merge with another consciousness. But this phase, however intoxicating, is only the beginning. What follows is harder and quieter and more worthy of our attention: the slow, deliberate choice to remain present with another human being who will disappoint you, who will fail to read your mind, who will leave the cupboard open and the light on and the metaphors half-finished.
+
+To love someone over time is to watch your own impatience in a mirror. It is to discover, again and again, that the distance between your expectations and another person's reality is a space to be inhabited — the place where understanding can take root. The philosopher Erich Fromm called love an art, and like any art, it demands craft and patience and the willingness to revise. We come into it naturally defensive, self-protective, anxious about abandonment. Love asks us to set those instincts down, often enough that something else can grow in the clearing.
+
+There is also the matter of love's grief. Every act of deep affection contains within it the knowledge that it will end — through change, through distance, through the simple and irreversible passage of time. The Japanese poets understood this. Their cherry blossoms were never only about beauty. They were about the beauty that is inseparable from loss. To love well is to hold both the warmth and the ache in the same hand, and to refuse the false comfort of pretending one without the other.
+
+Perhaps the truest thing we can say about love is that it reveals us — who we are beneath the stories we tell ourselves. It strips away the narrative we have constructed about our own patience and kindness and shows us the raw material underneath. This is an invitation to something harder and more honest. Love holds up a mirror and says, gently, *look*. And if we are brave enough to look, we find the possibility of becoming more fully ourselves, which may be the only transformation worth pursuing.
+
+TASK: Rewrite the essay fixing every flagged pattern using the suggested repair strategies. Keep the same argument, imagery, and roughly the same length (434 words +/- 10%). Do not introduce new listed patterns. Prefer concrete nouns over abstractions. Output ONLY the rewritten essay - no preamble, no commentary, no explanations.

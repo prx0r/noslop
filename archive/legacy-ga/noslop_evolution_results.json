@@ -1,0 +1,15 @@
+{
+  "winner_config": {
+    "narr_weight": 2.0,
+    "neg_weight": 0.5,
+    "three_list_weight": 1.2,
+    "cliche_weight": 0.8,
+    "pattern_threshold": 0.2,
+    "burstiness_threshold": 0.2,
+    "punct_threshold": 0.02,
+    "ai_threshold": 0.7
+  },
+  "best_accuracy": 0.8378378378378378,
+  "generations": 100,
+  "dataset_size": 37
+}

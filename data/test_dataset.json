@@ -1,0 +1,446 @@
+{
+  "description": "Labeled text dataset for AI text detection. Each entry has text + label (1=AI, 0=human) + patterns present.",
+  "version": "1",
+  "entries": [
+    {
+      "id": "ai_001",
+      "text": "The paper opens with alchemy, and the choice is deliberate because alchemy provides the controlling metaphor for everything that follows. Not conceptual analysis, but participatory knowledge. Gods, angels, and daimons. This section examines the role of imagination in spiritual practice.",
+      "label": 1,
+      "patterns": ["NARR", "NEG", "3LIST", "NARR"],
+      "model": "gpt-4",
+      "notes": "Classic AI slop: narrates what the text does, uses negation scaffold, three-item list"
+    },
+    {
+      "id": "ai_002",
+      "text": "Before diving into Corbin's cosmology, Voss establishes a crucial distinction between two modes of knowing. One is Aristotelian: rational, analytical, the observer separate from the observed. The other is Platonic: participatory, intuitive, the knower united with the known. Corbin's entire project sits firmly in the second camp.",
+      "label": 1,
+      "patterns": ["NARR", "3LIST", "PARA"],
+      "model": "gpt-4",
+      "notes": "Double narration (before diving, establishes), three-item list, restates source"
+    },
+    {
+      "id": "ai_003",
+      "text": "The cosmology that underlies everything Corbin wrote is three-tiered, and the crucial point is that the middle tier is as ontologically real as the other two. The gods, angels, and daimons that appear in visionary experience are not projections of the psyche but presences encountered in an objective intermediate realm.",
+      "label": 1,
+      "patterns": ["NARR", "3LIST", "NEG"],
+      "model": "claude-3",
+      "notes": "Meta-narration (crucial point), three-list, negation scaffold"
+    },
+    {
+      "id": "ai_004",
+      "text": "In this cosmology, the imagination is not a human faculty projecting fantasies. It is the angelic mode of perception. Angels do not have physical senses, so they perceive through imagination. When humans cultivate the active imagination, they are literally learning to perceive as angels perceive.",
+      "label": 1,
+      "patterns": ["NEG", "PARA"],
+      "model": "gpt-4",
+      "notes": "Negation scaffold (not X but Y), restates source without adding"
+    },
+    {
+      "id": "ai_005",
+      "text": "The Burning Bush is the paradigmatic example because it makes the principle concrete. The same phenomenon presents itself differently depending on the faculty brought to it: to the senses, a brushwood fire; to the imagination operating at full capacity, a theophany. The difference is in the perceiver.",
+      "label": 1,
+      "patterns": ["PARA", "FLAT"],
+      "model": "claude-3",
+      "notes": "Restates source, uniform sentence length"
+    },
+    {
+      "id": "ai_006",
+      "text": "We now turn to the question of how symbols participate in divine order. The paper opens with a distinction between allegory and symbol. What follows is an analysis of the active imagination as an organ of perception.",
+      "label": 1,
+      "patterns": ["NARR", "NARR", "NARR"],
+      "model": "gpt-3.5",
+      "notes": "Triple narration: we turn to, paper opens with, what follows is"
+    },
+    {
+      "id": "ai_007",
+      "text": "This is important because it determines the entire framework. The key claim is that imagination produces perceptions, not fantasies. The main argument rests on this distinction.",
+      "label": 1,
+      "patterns": ["NARR", "NEG", "FLAT"],
+      "model": "gpt-3.5",
+      "notes": "Meta-narration (important, key claim, main argument), negation, flat rhythm"
+    },
+    {
+      "id": "ai_008",
+      "text": "Living your truth is the most important thing. The power of now connects us to our authentic self. Step into your light and honor your journey. Trust the process and hold space for transformation.",
+      "label": 1,
+      "patterns": ["CLICHE"],
+      "model": "gpt-4",
+      "notes": "Self-help cliches: living your truth, power of now, step into your light, honor your journey, trust the process, hold space for"
+    },
+    {
+      "id": "ai_009",
+      "text": "The tradition Corbin belongs to runs from Plotinus through Iamblichus to Jung and Hillman. Before Corbin, the Platonic tradition had to borrow the vocabulary of theology. Corbin gave it the vocabulary of phenomenology.",
+      "label": 1,
+      "patterns": ["NARR", "NARR", "NARR"],
+      "model": "claude-3",
+      "notes": "Triple narration of what Corbin did"
+    },
+    {
+      "id": "ai_010",
+      "text": "Not a creative one, but a spiritual discipline. The distinction between imagination and fantasy is not between two different faculties but between two different orientations of the same power. Instead of studying the map, walk the territory.",
+      "label": 1,
+      "patterns": ["NEG", "NEG", "NEG"],
+      "model": "gpt-4",
+      "notes": "Triple negation in different forms"
+    },
+    {
+      "id": "human_001",
+      "text": "Corbin's alchemy has nothing to do with gold. Forget the furnace. What he's describing is a soul learning to see through itself — spirit and matter meeting at a seam most people never notice is there.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Direct, concrete, no patterns"
+    },
+    {
+      "id": "human_002",
+      "text": "Three floors to this universe. Top floor: pure intelligible divinity. Ground floor: matter, the stuff you can stub a toe on. And a middle floor most philosophy forgets to build.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Concrete metaphor, fragments, rhythm"
+    },
+    {
+      "id": "human_003",
+      "text": "Angels have no eyes, no ears — nothing to perceive with except imagination itself. So when Corbin tells you to cultivate your active imagination, he isn't asking you to daydream better.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Concrete imagery, fragments, voice"
+    },
+    {
+      "id": "human_004",
+      "text": "Barzakh. The word means barrier, isthmus, something that separates two things without becoming either of them. Ibn Arabi turns this ordinary Arabic word into the name for divine Imagination itself.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Opens with the word itself, active voice, concrete"
+    },
+    {
+      "id": "human_005",
+      "text": "The Burning Bush makes this concrete. A brushwood fire to the senses — a theophany to the imagination. Same phenomenon, different organ of perception.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Fragment, rhythm, concrete imagery"
+    },
+    {
+      "id": "human_006",
+      "text": "Learning to steer is the entire discipline. That's seven words. The metaphor is concrete — steering a chariot, a ship, a horse. And it implies the discipline is active, not passive.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Self-aware, concrete, committed stance"
+    },
+    {
+      "id": "human_007",
+      "text": "Put the book down and sit in silence for five minutes. That silence has weather. Corbin gave it a name.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Imperative, concrete, short punch"
+    },
+    {
+      "id": "human_008",
+      "text": "The pun is the whole theology compressed into a single word. Isthmus. Barrier. Both at once. Neither one fully.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Fragment, compression, rhythm"
+    },
+    {
+      "id": "human_009",
+      "text": "Two eyes. Physical sensation and imagination. How do you know which eye is active? Watch the object. If a chameleon shifts color as you watch it, and your watching does not arrest the shift, you are seeing with the eye of imagination.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Concrete test, fragments, specific image"
+    },
+    {
+      "id": "human_010",
+      "text": "Integration costs something because what must be integrated is already whole; the ego, as it stands, is the part that needs remaking.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Committed, precise, no scaffolding"
+    },
+    {
+      "id": "humanized_001",
+      "text": "So Corbin starts by talking about alchemy — but not the kind with beakers and gold. He means the inner work, the transformation of the soul. And this imaginal world he describes, this middle ground between pure spirit and raw matter, that's where the work happens.",
+      "label": 0,
+      "patterns": [],
+      "model": "gpt-4-humanized",
+      "notes": "Humanized version of AI text — patterns removed, voice added"
+    },
+    {
+      "id": "humanized_002",
+      "text": "Here's what's interesting: the same fire that looks like brushwood to your eyes becomes a divine encounter when your imagination is working. Same phenomenon, completely different experience. That's Corbin's whole point.",
+      "label": 0,
+      "patterns": [],
+      "model": "claude-3-humanized",
+      "notes": "Humanized: conversational, concrete, no narration"
+    },
+    {
+      "id": "mixed_001",
+      "text": "The distinction between Aristotelian and Platonic modes of knowing matters here. One stands outside and analyzes. The other participates. Corbin chose the second path, and his scholarship itself became a form of participation.",
+      "label": 1,
+      "patterns": ["NARR", "NEG"],
+      "model": "gpt-4-mixed",
+      "notes": "Partially humanized — still has narration (matters here) and mild negation"
+    },
+    {
+      "id": "human_011",
+      "text": "I woke up at 3am to the sound of rain against the window. The kind of rain that sounds like static, like the universe is between stations. I lay there listening, counting the seconds between lightning and thunder.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Personal narrative, concrete sensory detail, natural rhythm"
+    },
+    {
+      "id": "human_012",
+      "text": "The coffee was cold. I'd been staring at the screen for two hours, and the mug had gone from steaming to tepid to room temperature without me noticing. That's the thing about deep work — time doesn't pass, it evaporates.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Observational, concrete, opinion embedded naturally"
+    },
+    {
+      "id": "human_013",
+      "text": "Look, I'm not going to pretend this is a good idea. It's probably terrible. But the thing about terrible ideas is that they're the only ones nobody else has tried. The good ideas are all taken.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Conversational, hedging, direct address, personality"
+    },
+    {
+      "id": "human_014",
+      "text": "The problem with most productivity advice is that it assumes you have energy. You don't. You have a finite amount of willpower each day, and every decision you make — what to eat, what to wear, whether to check email — spends some of it.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Opinionated, concrete, conversational register"
+    },
+    {
+      "id": "human_015",
+      "text": "My daughter asked me what clouds are made of. I said water. She said no, they're made of sky. I didn't have an argument. She was six and she was right — clouds are sky that forgot how to be invisible.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Anecdote, specific, surprising ending, no scaffolding"
+    },
+    {
+      "id": "human_016",
+      "text": "Heard an interesting thing today. Apparently the average person makes about 35,000 decisions a day. Most of them unconscious. Which means by the time you're deciding what to have for lunch, you've already made 34,999 worse ones.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Conversational, statistics used naturally, punchline structure"
+    },
+    {
+      "id": "human_017",
+      "text": "The train was late again. Third time this week. I stood on the platform watching the departure board flip between 'DELAYED' and 'CANCELLED' like it was playing a game with me. The other passengers had the dead-eyed look of people who'd already made peace with it.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Specific detail, observation, character sketch, natural flow"
+    },
+    {
+      "id": "human_018",
+      "text": "You know what's underrated? Libraries. Not the books — the silence. That particular kind of silence where everyone is thinking different thoughts but agreeing not to make noise about it. It's the most democratic thing humans do.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Conversational opener, specific observation, opinion"
+    },
+    {
+      "id": "ai_011",
+      "text": "The key insight here is that the author establishes a framework that connects these seemingly disparate concepts. First, he introduces the central thesis. Then, he develops it through a series of carefully constructed arguments. Finally, he arrives at a conclusion that ties everything together.",
+      "label": 1,
+      "patterns": ["NARR", "NARR", "NARR"],
+      "model": "gpt-4",
+      "notes": "Triple narration: introduces, develops, arrives at"
+    },
+    {
+      "id": "ai_012",
+      "text": "What follows is an analysis of the three main themes. First, the role of imagination in spiritual practice. Second, the relationship between symbol and allegory. Third, the nature of visionary experience. Each of these themes builds on the previous one, creating a comprehensive framework.",
+      "label": 1,
+      "patterns": ["NARR", "NARR", "3LIST", "3LIST"],
+      "model": "gpt-4",
+      "notes": "Preview narration, double three-list, framework language"
+    },
+    {
+      "id": "ai_013",
+      "text": "In this section, we will examine the author's use of symbolism. It is important to note that the symbolism is not merely decorative, but serves a deeper purpose. The author argues that symbols are the language of the soul, and that understanding them is essential for spiritual growth.",
+      "label": 1,
+      "patterns": ["NARR", "NARR", "NEG", "CLICHE"],
+      "model": "claude-3",
+      "notes": "Section narration, meta-narration, negation, spiritual growth cliche"
+    },
+    {
+      "id": "ai_014",
+      "text": "Not only does the author provide a compelling argument, but he also demonstrates its practical application. This dual approach — theory combined with practice — is what sets this work apart from others in the field. The implications are significant for both scholars and practitioners alike.",
+      "label": 1,
+      "patterns": ["NEG", "PARA", "FLAT"],
+      "model": "gpt-4",
+      "notes": "Negation scaffold, restates without adding, flat conclusion"
+    },
+    {
+      "id": "humanized_003",
+      "text": "So here's the thing about symbols — they're not just pretty pictures. Corbin means something specific: images that actually show you something real, something you couldn't see any other way. That's different from an allegory, which is more like a code you already know.",
+      "label": 0,
+      "patterns": [],
+      "model": "gpt-4-humanized",
+      "notes": "Humanized: conversational, concrete, no patterns"
+    },
+    {
+      "id": "humanized_004",
+      "text": "The active imagination isn't daydreaming. It's more like... training your eye to see what's already there. Angels don't have physical senses, so they perceive through this faculty. When we cultivate it, we're literally growing the organ they use.",
+      "label": 0,
+      "patterns": [],
+      "model": "claude-3-humanized",
+      "notes": "Humanized: fragments, concrete, conversational"
+    },
+    {
+      "id": "human_019",
+      "text": "The experiment failed spectacularly. Not in the way I expected — the apparatus worked fine, the measurements were precise, the data was clean. It failed because the hypothesis was wrong. The universe doesn't care about elegant theories.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Self-deprecating, specific, opinion embedded, rhythm"
+    },
+    {
+      "id": "human_020",
+      "text": "She walked into the lab at 6am, coffee in hand, and immediately knew something was off. The incubator was making a sound it shouldn't make. Not broken — just different. Twenty years of microbiology teaches you to listen to your equipment.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Narrative, sensory detail, specific expertise, natural flow"
+    },
+    {
+      "id": "human_021",
+      "text": "I've been reading about the history of encryption. Did you know that Julius Caesar used a simple shift cipher? Move each letter three positions forward. A becomes D. It's almost charming how naive that seems now, but it worked for centuries.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Conversational, specific fact, opinion, natural digression"
+    },
+    {
+      "id": "human_022",
+      "text": "The restaurant was empty except for us and a couple in the corner. The waiter brought menus that were clearly designed by someone who'd never worked in a restaurant — heavy cardstock, tiny font, no prices. We ordered anyway. Sometimes the worst decisions make the best stories.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Observation, humor, specific detail, self-aware"
+    },
+    {
+      "id": "human_023",
+      "text": "There's a particular kind of exhaustion that comes from writing code for twelve hours straight. Not physical tiredness — mental. Your brain starts seeing bugs in everything. Last night I found a bug in my coffee maker. It was making coffee too well.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Humor, specific experience, self-deprecating, punchline"
+    },
+    {
+      "id": "human_024",
+      "text": "The old man at the bus stop told me he'd been waiting for forty years. I laughed. He didn't. Turns out he was talking about his wife, who'd gone into the shop across the street in 1986 and never came back. He still waits. Every day.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Twist ending, emotional weight, specific detail, compression"
+    },
+    {
+      "id": "ai_015",
+      "text": "In today's rapidly evolving digital landscape, artificial intelligence has emerged as a transformative technology that is reshaping industries across the globe. From healthcare to finance, the implications are profound and far-reaching. It is worth noting that this technology is not merely a tool, but a paradigm shift in how we approach problem-solving.",
+      "label": 1,
+      "patterns": ["NARR", "NEG"],
+      "model": "gpt-4",
+      "notes": "AI n-gram tells: digital landscape, transformative, paradigm shift, it is worth noting, not merely... but"
+    },
+    {
+      "id": "ai_016",
+      "text": "The comprehensive analysis reveals several key findings. First, the data suggests a strong correlation between the variables under investigation. Second, the results demonstrate the robustness of the methodology employed. Third, the implications extend beyond the immediate scope of the study, offering valuable insights for future research in this domain.",
+      "label": 1,
+      "patterns": ["NARR", "3LIST"],
+      "model": "gpt-4",
+      "notes": "Academic AI: comprehensive, key findings, demonstrates, valuable insights, three-list"
+    },
+    {
+      "id": "ai_017",
+      "text": "Welcome to our comprehensive guide on machine learning! In this article, we'll dive deep into the fascinating world of neural networks. Whether you're a seasoned developer or just starting out, this guide will equip you with the knowledge you need to harness the power of AI. Let's embark on this exciting journey together.",
+      "label": 1,
+      "patterns": ["NARR", "CLICHE"],
+      "model": "gpt-4",
+      "notes": "Blog AI: comprehensive guide, dive deep, harness the power, embark on, whether you're"
+    },
+    {
+      "id": "ai_018",
+      "text": "The significance of this discovery cannot be overstated. It represents a pivotal moment in our understanding of the universe. Moreover, it challenges the prevailing paradigm and opens up new avenues for exploration. The implications are truly groundbreaking and have the potential to revolutionize the field.",
+      "label": 1,
+      "patterns": ["NARR", "NEG"],
+      "model": "claude-3",
+      "notes": "Academic AI: cannot be overstated, pivotal moment, moreover, paradigm, groundbreaking, revolutionize"
+    },
+    {
+      "id": "ai_019",
+      "text": "In this blog post, we'll explore the art of productive procrastination. First, we'll delve into the science behind why our brains resist focused work. Then, we'll examine practical strategies to hack your productivity. Finally, we'll discuss how to leverage these techniques for maximum impact. Stay tuned for actionable insights!",
+      "label": 1,
+      "patterns": ["NARR", "3LIST", "CLICHE"],
+      "model": "gpt-4",
+      "notes": "Blog AI: delve into, hack your productivity, leverage, actionable insights, three-list structure"
+    },
+    {
+      "id": "ai_020",
+      "text": "The relationship between sleep and cognitive performance has been the subject of extensive research. Studies have consistently demonstrated that adequate sleep is essential for memory consolidation, emotional regulation, and overall mental well-being. It is important to note that the quality of sleep matters just as much as the quantity.",
+      "label": 1,
+      "patterns": ["NARR", "NEG"],
+      "model": "claude-3",
+      "notes": "Health AI: extensive research, consistently demonstrated, it is important to note"
+    },
+    {
+      "id": "human_025",
+      "text": "The problem with most studies on sleep is that they measure the wrong things. They count hours. But sleep isn't a bank account where you deposit hours and withdraw alertness. It's more like a garden — sometimes you need to let it grow wild before it produces anything useful.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Opinionated, metaphor, specific critique, no scaffolding"
+    },
+    {
+      "id": "human_026",
+      "text": "I tested four different coffee makers over the weekend. The $30 one made better coffee than the $300 one. The expensive one looked nicer on the counter, but taste is taste. Sometimes the obvious answer is the right one and you just have to accept it.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Personal experience, specific comparison, opinion, natural conclusion"
+    },
+    {
+      "id": "human_027",
+      "text": "The thing about grief is that it doesn't follow a schedule. Everyone tells you about the five stages, like it's a checklist. But grief is more like weather — some days clear, some days a storm, and occasionally a beautiful day that makes you forget for a moment.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Personal, metaphor, emotional honesty, specific observation"
+    },
+    {
+      "id": "ai_021",
+      "text": "To summarize, this article has provided a comprehensive overview of the key concepts and strategies discussed. We have explored the multifaceted nature of the topic, examined its practical applications, and considered its broader implications. The takeaway is clear: understanding these principles is paramount to success in this rapidly evolving field.",
+      "label": 1,
+      "patterns": ["NARR", "CLICHE"],
+      "model": "gpt-4",
+      "notes": "Conclusion AI: comprehensive overview, multifaceted, takeaway, paramount, rapidly evolving"
+    },
+    {
+      "id": "ai_022",
+      "text": "The intersection of technology and humanity presents both opportunities and challenges that we must navigate with care. On one hand, artificial intelligence offers unprecedented capabilities. On the other hand, it raises important ethical questions about privacy, autonomy, and the future of work. Finding the right balance is crucial.",
+      "label": 1,
+      "patterns": ["NEG", "3LIST"],
+      "model": "claude-3",
+      "notes": "Opinion AI: on one hand... on the other hand, navigate, crucial, three-list"
+    },
+    {
+      "id": "human_028",
+      "text": "Spent the morning at the farmers market. Bought tomatoes that actually taste like tomatoes — remember those? The vendor told me they're heritage varieties, grown without the chemicals that make supermarket tomatoes look perfect and taste like cardboard.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Observational, sensory, opinion, specific detail"
+    }
+  ]
+}

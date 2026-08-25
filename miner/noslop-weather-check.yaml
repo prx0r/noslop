@@ -1,0 +1,34 @@
+slug: noslop-weather-check
+version: "1"
+intents:
+  - name: WEATHER_CHECK
+    description: "Current weather conditions for a location"
+    endpoint: /weather
+    method: POST
+    schema:
+      input:
+        type: object
+        properties:
+          text:
+            type: string
+            description: "Natural language weather query"
+        required: [text]
+      output:
+        type: object
+        properties:
+          answer:
+            type: string
+            description: "Weather response in evolved format"
+          status:
+            type: string
+            enum: [success, error]
+        required: [answer, status]
+auth:
+  type: none
+x-telegraph:
+  payment: x402
+  slug: noslop-weather-check
+  signal_mapping:
+    type: weather_risk
+    label_field: answer
+    confidence_field: status

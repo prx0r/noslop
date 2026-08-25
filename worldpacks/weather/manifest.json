@@ -1,0 +1,26 @@
+{
+  "name": "weather",
+  "version": "1",
+  "description": "Evolve optimal response format for Telegraph weather intents",
+  "intents": ["WEATHER_CHECK", "WEATHER_FORECAST"],
+  "world_module": "worldpacks.weather.world.WeatherWorld",
+  "policy_module": "worldpacks.weather.policy.FormatPolicy",
+  "executor_module": "worldpacks.weather.executor.WeatherExecutor",
+  "search_space": {
+    "template_key": [
+      "concise_city_first", "concise_city_last", "sentence_current",
+      "sentence_it_is", "sentence_weather_in", "sentence_right_now",
+      "sentence_expect", "sentence_will_be", "sentence_forecast",
+      "minimal", "dash_style", "comma_style"
+    ],
+    "include_period": [true, false],
+    "capitalize_first": [true, false]
+  },
+  "quality_gates": [
+    {"metric": "overlap", "mode": "max", "value": 0.80}
+  ],
+  "objectives": [
+    {"metric": "overlap", "direction": "max"},
+    {"metric": "length_fit", "direction": "max"}
+  ]
+}

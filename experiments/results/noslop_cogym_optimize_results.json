@@ -1,0 +1,33 @@
+{
+  "champion_config": {
+    "w_specialist": 5,
+    "threshold": 58
+  },
+  "val_metrics": {
+    "w_specialist": 5,
+    "threshold": 58
+  },
+  "test_metrics": {
+    "hc3_test": {
+      "k": 698,
+      "n": 800,
+      "p": 0.8725,
+      "lo": 0.847594,
+      "hi": 0.893845
+    },
+    "sem_test": {
+      "k": 1721,
+      "n": 2000,
+      "p": 0.8605,
+      "lo": 0.844623,
+      "hi": 0.874994
+    },
+    "polished_ai": {
+      "k": 4,
+      "n": 39,
+      "p": 0.102564,
+      "lo": 0.040613,
+      "hi": 0.235789
+    }
+  }
+}

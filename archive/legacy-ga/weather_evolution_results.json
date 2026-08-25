@@ -1,0 +1,10 @@
+{
+  "winners": [],
+  "generations": 1,
+  "stats": {
+    "informed": 0,
+    "fallback": 0,
+    "projected": 0
+  },
+  "archive_size": 0
+}

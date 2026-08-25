@@ -1,0 +1,63 @@
+{
+  "split_manifest": "data/heldout_split.json",
+  "procedure": "GA on train split only; held-out never touched during search",
+  "generations": 150,
+  "population_size": 20,
+  "clean_procedure": {
+    "config": {
+      "narr_weight": 1.0,
+      "neg_weight": 0.2,
+      "three_list_weight": 0.3,
+      "cliche_weight": 1.0,
+      "pattern_threshold": 0.5,
+      "burstiness_threshold": 0.4,
+      "punct_threshold": 0.01,
+      "ld_threshold": 0.15,
+      "ngram_threshold": 0.5,
+      "fw_threshold": 0.35,
+      "the_threshold": 0.5,
+      "abstract_threshold": 0.7,
+      "commitment_threshold": 0.3,
+      "ai_threshold": 0.3
+    },
+    "train_correct": 32,
+    "train_size": 33,
+    "heldout_correct": 18,
+    "heldout_size": 22,
+    "wilson95": [
+      0.6148,
+      0.9269
+    ],
+    "misses": [
+      {
+        "id": "ai_016",
+        "true": 1,
+        "conf": 0.273
+      },
+      {
+        "id": "human_017",
+        "true": 0,
+        "conf": 0.321
+      },
+      {
+        "id": "human_026",
+        "true": 0,
+        "conf": 0.372
+      },
+      {
+        "id": "humanized_001",
+        "true": 0,
+        "conf": 0.404
+      }
+    ]
+  },
+  "v2_tuned_on_all": {
+    "heldout_correct": 22,
+    "heldout_size": 22,
+    "wilson95": [
+      0.8513,
+      1.0
+    ],
+    "misses": []
+  }
+}

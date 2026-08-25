@@ -1,0 +1,277 @@
+{
+  "entries": [
+    {
+      "id": "ai_001",
+      "text": "The paper opens with alchemy, and the choice is deliberate because alchemy provides the controlling metaphor for everything that follows. Not conceptual analysis, but participatory knowledge. Gods, angels, and daimons. This section examines the role of imagination in spiritual practice.",
+      "label": 1,
+      "patterns": [
+        "NARR",
+        "NEG",
+        "3LIST",
+        "NARR"
+      ],
+      "model": "gpt-4",
+      "notes": "Classic AI slop: narrates what the text does, uses negation scaffold, three-item list"
+    },
+    {
+      "id": "ai_003",
+      "text": "The cosmology that underlies everything Corbin wrote is three-tiered, and the crucial point is that the middle tier is as ontologically real as the other two. The gods, angels, and daimons that appear in visionary experience are not projections of the psyche but presences encountered in an objective intermediate realm.",
+      "label": 1,
+      "patterns": [
+        "NARR",
+        "3LIST",
+        "NEG"
+      ],
+      "model": "claude-3",
+      "notes": "Meta-narration (crucial point), three-list, negation scaffold"
+    },
+    {
+      "id": "ai_008",
+      "text": "Living your truth is the most important thing. The power of now connects us to our authentic self. Step into your light and honor your journey. Trust the process and hold space for transformation.",
+      "label": 1,
+      "patterns": [
+        "CLICHE"
+      ],
+      "model": "gpt-4",
+      "notes": "Self-help cliches: living your truth, power of now, step into your light, honor your journey, trust the process, hold space for"
+    },
+    {
+      "id": "ai_013",
+      "text": "In this section, we will examine the author's use of symbolism. It is important to note that the symbolism is not merely decorative, but serves a deeper purpose. The author argues that symbols are the language of the soul, and that understanding them is essential for spiritual growth.",
+      "label": 1,
+      "patterns": [
+        "NARR",
+        "NARR",
+        "NEG",
+        "CLICHE"
+      ],
+      "model": "claude-3",
+      "notes": "Section narration, meta-narration, negation, spiritual growth cliche"
+    },
+    {
+      "id": "ai_016",
+      "text": "The comprehensive analysis reveals several key findings. First, the data suggests a strong correlation between the variables under investigation. Second, the results demonstrate the robustness of the methodology employed. Third, the implications extend beyond the immediate scope of the study, offering valuable insights for future research in this domain.",
+      "label": 1,
+      "patterns": [
+        "NARR",
+        "3LIST"
+      ],
+      "model": "gpt-4",
+      "notes": "Academic AI: comprehensive, key findings, demonstrates, valuable insights, three-list"
+    },
+    {
+      "id": "ai_017",
+      "text": "Welcome to our comprehensive guide on machine learning! In this article, we'll dive deep into the fascinating world of neural networks. Whether you're a seasoned developer or just starting out, this guide will equip you with the knowledge you need to harness the power of AI. Let's embark on this exciting journey together.",
+      "label": 1,
+      "patterns": [
+        "NARR",
+        "CLICHE"
+      ],
+      "model": "gpt-4",
+      "notes": "Blog AI: comprehensive guide, dive deep, harness the power, embark on, whether you're"
+    },
+    {
+      "id": "ai_019",
+      "text": "In this blog post, we'll explore the art of productive procrastination. First, we'll delve into the science behind why our brains resist focused work. Then, we'll examine practical strategies to hack your productivity. Finally, we'll discuss how to leverage these techniques for maximum impact. Stay tuned for actionable insights!",
+      "label": 1,
+      "patterns": [
+        "NARR",
+        "3LIST",
+        "CLICHE"
+      ],
+      "model": "gpt-4",
+      "notes": "Blog AI: delve into, hack your productivity, leverage, actionable insights, three-list structure"
+    },
+    {
+      "id": "ai_020",
+      "text": "The relationship between sleep and cognitive performance has been the subject of extensive research. Studies have consistently demonstrated that adequate sleep is essential for memory consolidation, emotional regulation, and overall mental well-being. It is important to note that the quality of sleep matters just as much as the quantity.",
+      "label": 1,
+      "patterns": [
+        "NARR",
+        "NEG"
+      ],
+      "model": "claude-3",
+      "notes": "Health AI: extensive research, consistently demonstrated, it is important to note"
+    },
+    {
+      "id": "ai_022",
+      "text": "The intersection of technology and humanity presents both opportunities and challenges that we must navigate with care. On one hand, artificial intelligence offers unprecedented capabilities. On the other hand, it raises important ethical questions about privacy, autonomy, and the future of work. Finding the right balance is crucial.",
+      "label": 1,
+      "patterns": [
+        "NEG",
+        "3LIST"
+      ],
+      "model": "claude-3",
+      "notes": "Opinion AI: on one hand... on the other hand, navigate, crucial, three-list"
+    },
+    {
+      "id": "human_006",
+      "text": "Learning to steer is the entire discipline. That's seven words. The metaphor is concrete \u2014 steering a chariot, a ship, a horse. And it implies the discipline is active, not passive.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Self-aware, concrete, committed stance"
+    },
+    {
+      "id": "human_007",
+      "text": "Put the book down and sit in silence for five minutes. That silence has weather. Corbin gave it a name.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Imperative, concrete, short punch"
+    },
+    {
+      "id": "human_010",
+      "text": "Integration costs something because what must be integrated is already whole; the ego, as it stands, is the part that needs remaking.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Committed, precise, no scaffolding"
+    },
+    {
+      "id": "human_011",
+      "text": "I woke up at 3am to the sound of rain against the window. The kind of rain that sounds like static, like the universe is between stations. I lay there listening, counting the seconds between lightning and thunder.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Personal narrative, concrete sensory detail, natural rhythm"
+    },
+    {
+      "id": "human_012",
+      "text": "The coffee was cold. I'd been staring at the screen for two hours, and the mug had gone from steaming to tepid to room temperature without me noticing. That's the thing about deep work \u2014 time doesn't pass, it evaporates.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Observational, concrete, opinion embedded naturally"
+    },
+    {
+      "id": "human_013",
+      "text": "Look, I'm not going to pretend this is a good idea. It's probably terrible. But the thing about terrible ideas is that they're the only ones nobody else has tried. The good ideas are all taken.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Conversational, hedging, direct address, personality"
+    },
+    {
+      "id": "human_016",
+      "text": "Heard an interesting thing today. Apparently the average person makes about 35,000 decisions a day. Most of them unconscious. Which means by the time you're deciding what to have for lunch, you've already made 34,999 worse ones.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Conversational, statistics used naturally, punchline structure"
+    },
+    {
+      "id": "human_017",
+      "text": "The train was late again. Third time this week. I stood on the platform watching the departure board flip between 'DELAYED' and 'CANCELLED' like it was playing a game with me. The other passengers had the dead-eyed look of people who'd already made peace with it.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Specific detail, observation, character sketch, natural flow"
+    },
+    {
+      "id": "human_020",
+      "text": "She walked into the lab at 6am, coffee in hand, and immediately knew something was off. The incubator was making a sound it shouldn't make. Not broken \u2014 just different. Twenty years of microbiology teaches you to listen to your equipment.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Narrative, sensory detail, specific expertise, natural flow"
+    },
+    {
+      "id": "human_023",
+      "text": "There's a particular kind of exhaustion that comes from writing code for twelve hours straight. Not physical tiredness \u2014 mental. Your brain starts seeing bugs in everything. Last night I found a bug in my coffee maker. It was making coffee too well.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Humor, specific experience, self-deprecating, punchline"
+    },
+    {
+      "id": "human_026",
+      "text": "I tested four different coffee makers over the weekend. The $30 one made better coffee than the $300 one. The expensive one looked nicer on the counter, but taste is taste. Sometimes the obvious answer is the right one and you just have to accept it.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Personal experience, specific comparison, opinion, natural conclusion"
+    },
+    {
+      "id": "human_027",
+      "text": "The thing about grief is that it doesn't follow a schedule. Everyone tells you about the five stages, like it's a checklist. But grief is more like weather \u2014 some days clear, some days a storm, and occasionally a beautiful day that makes you forget for a moment.",
+      "label": 0,
+      "patterns": [],
+      "model": "human",
+      "notes": "Personal, metaphor, emotional honesty, specific observation"
+    },
+    {
+      "id": "humanized_001",
+      "text": "So Corbin starts by talking about alchemy \u2014 but not the kind with beakers and gold. He means the inner work, the transformation of the soul. And this imaginal world he describes, this middle ground between pure spirit and raw matter, that's where the work happens.",
+      "label": 0,
+      "patterns": [],
+      "model": "gpt-4-humanized",
+      "notes": "Humanized version of AI text \u2014 patterns removed, voice added"
+    }
+  ],
+  "source": "test_dataset.json",
+  "seed": 42,
+  "heldout_fraction": 0.4,
+  "train_size": 33,
+  "heldout_size": 22,
+  "train_ids": [
+    "ai_002",
+    "ai_004",
+    "ai_005",
+    "ai_006",
+    "ai_007",
+    "ai_009",
+    "ai_010",
+    "ai_011",
+    "ai_012",
+    "ai_014",
+    "ai_015",
+    "ai_018",
+    "ai_021",
+    "human_001",
+    "human_002",
+    "human_003",
+    "human_004",
+    "human_005",
+    "human_008",
+    "human_009",
+    "human_014",
+    "human_015",
+    "human_018",
+    "human_019",
+    "human_021",
+    "human_022",
+    "human_024",
+    "human_025",
+    "human_028",
+    "humanized_002",
+    "humanized_003",
+    "humanized_004",
+    "mixed_001"
+  ],
+  "heldout_ids": [
+    "ai_001",
+    "ai_003",
+    "ai_008",
+    "ai_013",
+    "ai_016",
+    "ai_017",
+    "ai_019",
+    "ai_020",
+    "ai_022",
+    "human_006",
+    "human_007",
+    "human_010",
+    "human_011",
+    "human_012",
+    "human_013",
+    "human_016",
+    "human_017",
+    "human_020",
+    "human_023",
+    "human_026",
+    "human_027",
+    "humanized_001"
+  ],
+  "manifest_hash": "f8eaa7f2fdf7ef24"
+}

@@ -1,0 +1,24 @@
+{
+  "highlight|full_rewrite": {
+    "n": 4,
+    "mean_reduction": 92.0,
+    "mean_retention": 89.9,
+    "clean": 1,
+    "clean_wilson": [
+      0.046,
+      0.699
+    ],
+    "mean_extra_calls": 2.0
+  },
+  "highlight|patch": {
+    "n": 4,
+    "mean_reduction": 79.0,
+    "mean_retention": 89.4,
+    "clean": 0,
+    "clean_wilson": [
+      0,
+      0.49
+    ],
+    "mean_extra_calls": 2.0
+  }
+}

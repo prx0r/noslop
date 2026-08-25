@@ -1,0 +1,99 @@
+{
+  "manifest": {
+    "topic": "love",
+    "target_words": 400,
+    "iterations": 2,
+    "writer": "hermes -z",
+    "miner": "logreg_v3_ensemble_28signals",
+    "timestamp": "2026-08-25T21:49:05",
+    "artifact_sha256": "01a9888fe61201c4"
+  },
+  "summary": {
+    "pattern_reduction_pct": 100.0,
+    "pattern_rate_reduction_pct": 100.0,
+    "confidence_delta": 0.0603,
+    "length_retention_pct": 95.7,
+    "versions": [
+      {
+        "version": 0,
+        "latency_s": 20.0,
+        "answer": 0,
+        "confidence": 0.0017,
+        "pattern_count": 15,
+        "pattern_rate": 0.5357,
+        "tags": {
+          "3LIST": 3,
+          "NEG": 12
+        },
+        "n_words": 444,
+        "n_sentences": 28
+      },
+      {
+        "version": 1,
+        "latency_s": 145.4,
+        "answer": 0,
+        "confidence": 0.1717,
+        "pattern_count": 2,
+        "pattern_rate": 0.08,
+        "tags": {
+          "3LIST": 1,
+          "NARR": 1
+        },
+        "n_words": 434,
+        "n_sentences": 25
+      },
+      {
+        "version": 2,
+        "latency_s": 125.6,
+        "answer": 0,
+        "confidence": 0.062,
+        "pattern_count": 0,
+        "pattern_rate": 0.0,
+        "tags": {},
+        "n_words": 425,
+        "n_sentences": 25
+      }
+    ]
+  },
+  "versions": [
+    {
+      "version": 0,
+      "latency_s": 20.0,
+      "answer": 0,
+      "confidence": 0.0017,
+      "pattern_count": 15,
+      "pattern_rate": 0.5357,
+      "tags": {
+        "3LIST": 3,
+        "NEG": 12
+      },
+      "n_words": 444,
+      "n_sentences": 28
+    },
+    {
+      "version": 1,
+      "latency_s": 145.4,
+      "answer": 0,
+      "confidence": 0.1717,
+      "pattern_count": 2,
+      "pattern_rate": 0.08,
+      "tags": {
+        "3LIST": 1,
+        "NARR": 1
+      },
+      "n_words": 434,
+      "n_sentences": 25
+    },
+    {
+      "version": 2,
+      "latency_s": 125.6,
+      "answer": 0,
+      "confidence": 0.062,
+      "pattern_count": 0,
+      "pattern_rate": 0.0,
+      "tags": {},
+      "n_words": 425,
+      "n_sentences": 25
+    }
+  ]
+}

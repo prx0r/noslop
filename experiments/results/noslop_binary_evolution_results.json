@@ -1,0 +1,38 @@
+{
+  "winner_config": {
+    "narr_weight": 0.3,
+    "neg_weight": 0.2,
+    "three_list_weight": 1.5,
+    "cliche_weight": 1.0,
+    "pattern_threshold": 0.3,
+    "burstiness_threshold": 0.5,
+    "punct_threshold": 0.04,
+    "ld_threshold": 0.8,
+    "ngram_threshold": 0.2,
+    "fw_threshold": 0.55,
+    "the_threshold": 0.5,
+    "abstract_threshold": 0.8,
+    "commitment_threshold": 0.2,
+    "ai_threshold": 0.45
+  },
+  "train_acc": 0.7639484978540773,
+  "heldout": {
+    "correct": 602,
+    "n": 800,
+    "wilson95": [
+      0.7214,
+      0.7812
+    ]
+  },
+  "original_set": {
+    "correct": 42,
+    "n": 55
+  },
+  "old_weights_heldout": {
+    "correct": 519,
+    "n": 800
+  },
+  "generations": 300,
+  "population": 24,
+  "train_size": 1165
+}

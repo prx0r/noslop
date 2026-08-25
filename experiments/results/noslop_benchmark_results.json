@@ -1,0 +1,140 @@
+{
+  "hc3": {
+    "n": 5575,
+    "correct": 4922,
+    "wilson95": [
+      0.8742,
+      0.891
+    ],
+    "by_source": {
+      "hc3_human": {
+        "n": 3585,
+        "tp": 0,
+        "tn": 3309,
+        "fp": 276,
+        "fn": 0
+      },
+      "hc3_chatgpt": {
+        "n": 1990,
+        "tp": 1613,
+        "tn": 0,
+        "fp": 0,
+        "fn": 377
+      }
+    }
+  },
+  "polished_ai_v7": {
+    "n": 39,
+    "correct": 4,
+    "wilson95": [
+      0.0406,
+      0.2358
+    ],
+    "by_source": {
+      "polished_ai_v7": {
+        "n": 39,
+        "tp": 4,
+        "tn": 0,
+        "fp": 0,
+        "fn": 35
+      }
+    }
+  },
+  "original_slop_set": {
+    "n": 55,
+    "correct": 47,
+    "wilson95": [
+      0.7384,
+      0.9244
+    ],
+    "by_source": {
+      "orig_ai": {
+        "n": 22,
+        "tp": 16,
+        "tn": 0,
+        "fp": 0,
+        "fn": 6
+      },
+      "orig_human": {
+        "n": 28,
+        "tp": 0,
+        "tn": 27,
+        "fp": 1,
+        "fn": 0
+      },
+      "orig_humanized": {
+        "n": 4,
+        "tp": 0,
+        "tn": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "orig_mixed": {
+        "n": 1,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    }
+  },
+  "combined": {
+    "n": 5669,
+    "correct": 4973,
+    "wilson95": [
+      0.8684,
+      0.8855
+    ],
+    "by_source": {
+      "hc3_human": {
+        "n": 3585,
+        "tp": 0,
+        "tn": 3309,
+        "fp": 276,
+        "fn": 0
+      },
+      "hc3_chatgpt": {
+        "n": 1990,
+        "tp": 1613,
+        "tn": 0,
+        "fp": 0,
+        "fn": 377
+      },
+      "polished_ai_v7": {
+        "n": 39,
+        "tp": 4,
+        "tn": 0,
+        "fp": 0,
+        "fn": 35
+      },
+      "orig_ai": {
+        "n": 22,
+        "tp": 16,
+        "tn": 0,
+        "fp": 0,
+        "fn": 6
+      },
+      "orig_human": {
+        "n": 28,
+        "tp": 0,
+        "tn": 27,
+        "fp": 1,
+        "fn": 0
+      },
+      "orig_humanized": {
+        "n": 4,
+        "tp": 0,
+        "tn": 4,
+        "fp": 0,
+        "fn": 0
+      },
+      "orig_mixed": {
+        "n": 1,
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1
+      }
+    }
+  }
+}

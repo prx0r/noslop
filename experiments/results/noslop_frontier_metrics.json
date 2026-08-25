@@ -1,0 +1,28 @@
+{
+  "five_metrics_heldout_hc3": {
+    "auroc": 0.9462,
+    "auprc": 0.9429,
+    "brier": 0.0938,
+    "acc@eer_thr": 0.8675,
+    "eer_threshold": 0.4654,
+    "tpr@fpr1%": 0.3375
+  },
+  "length_buckets": {
+    "50-150w": {
+      "n": 323,
+      "acc": 0.8483
+    },
+    "150-300w": {
+      "n": 409,
+      "acc": 0.8778
+    },
+    "300-10000w": {
+      "n": 68,
+      "acc": 0.9265
+    }
+  },
+  "neg_coefficients": {
+    "member_hc3_specialist": -0.17558029914621845,
+    "member_multidomain": -1.6515681232904988
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "winner_config": {
+    "narr_weight": 1.0,
+    "neg_weight": 0.3,
+    "three_list_weight": 0.2,
+    "cliche_weight": 5.0,
+    "pattern_threshold": 1.0,
+    "burstiness_threshold": 0.3,
+    "punct_threshold": 0.03,
+    "ld_threshold": 0.4,
+    "ngram_threshold": 0.3,
+    "fw_threshold": 0.5,
+    "the_threshold": 0.2,
+    "abstract_threshold": 0.8,
+    "commitment_threshold": 0.3,
+    "ai_threshold": 0.35
+  },
+  "best_accuracy": 0.9636363636363636,
+  "generations": 150,
+  "dataset_size": 55,
+  "search_space": {
+    "narr_weight": [
+      0.3,
+      0.5,
+      0.8,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "neg_weight": [
+      0.2,
+      0.3,
+      0.5,
+      0.8,
+      1.0,
+      1.5
+    ],
+    "three_list_weight": [
+      0.2,
+      0.3,
+      0.5,
+      0.8,
+      1.0,
+      1.5
+    ],
+    "cliche_weight": [
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      5.0
+    ],
+    "pattern_threshold": [
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "burstiness_threshold": [
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6
+    ],
+    "punct_threshold": [
+      0.005,
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05
+    ],
+    "ld_threshold": [
+      0.15,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.8
+    ],
+    "ngram_threshold": [
+      0.2,
+      0.3,
+      0.5,
+      0.8,
+      1.0,
+      1.5
+    ],
+    "fw_threshold": [
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55
+    ],
+    "the_threshold": [
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.5
+    ],
+    "abstract_threshold": [
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "commitment_threshold": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.3
+    ],
+    "ai_threshold": [
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6
+    ]
+  }
+}

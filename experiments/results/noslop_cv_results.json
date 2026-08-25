@@ -1,0 +1,154 @@
+{
+  "pooled_correct": 50,
+  "pooled_n": 55,
+  "wilson95": [
+    0.8042,
+    0.9605
+  ],
+  "folds": [
+    {
+      "fold": 0,
+      "train_size": 43,
+      "test_size": 12,
+      "correct": 12,
+      "config": {
+        "narr_weight": 1.0,
+        "neg_weight": 0.3,
+        "three_list_weight": 0.2,
+        "cliche_weight": 0.5,
+        "pattern_threshold": 1.0,
+        "burstiness_threshold": 0.15,
+        "punct_threshold": 0.01,
+        "ld_threshold": 0.5,
+        "ngram_threshold": 1.5,
+        "fw_threshold": 0.5,
+        "the_threshold": 0.25,
+        "abstract_threshold": 0.8,
+        "commitment_threshold": 0.2,
+        "ai_threshold": 0.35
+      },
+      "misses": []
+    },
+    {
+      "fold": 1,
+      "train_size": 43,
+      "test_size": 12,
+      "correct": 11,
+      "config": {
+        "narr_weight": 0.3,
+        "neg_weight": 0.3,
+        "three_list_weight": 0.5,
+        "cliche_weight": 1.0,
+        "pattern_threshold": 0.8,
+        "burstiness_threshold": 0.3,
+        "punct_threshold": 0.01,
+        "ld_threshold": 0.5,
+        "ngram_threshold": 1.0,
+        "fw_threshold": 0.3,
+        "the_threshold": 0.3,
+        "abstract_threshold": 0.8,
+        "commitment_threshold": 0.1,
+        "ai_threshold": 0.35
+      },
+      "misses": [
+        {
+          "id": "ai_004",
+          "true": 1,
+          "conf": 0.275
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "train_size": 44,
+      "test_size": 11,
+      "correct": 9,
+      "config": {
+        "narr_weight": 0.8,
+        "neg_weight": 0.3,
+        "three_list_weight": 0.2,
+        "cliche_weight": 3.0,
+        "pattern_threshold": 1.0,
+        "burstiness_threshold": 0.6,
+        "punct_threshold": 0.05,
+        "ld_threshold": 0.8,
+        "ngram_threshold": 0.2,
+        "fw_threshold": 0.55,
+        "the_threshold": 0.25,
+        "abstract_threshold": 0.8,
+        "commitment_threshold": 0.1,
+        "ai_threshold": 0.45
+      },
+      "misses": [
+        {
+          "id": "ai_009",
+          "true": 1,
+          "conf": 0.447
+        },
+        {
+          "id": "ai_017",
+          "true": 1,
+          "conf": 0.427
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "train_size": 45,
+      "test_size": 10,
+      "correct": 9,
+      "config": {
+        "narr_weight": 0.8,
+        "neg_weight": 0.3,
+        "three_list_weight": 0.5,
+        "cliche_weight": 0.5,
+        "pattern_threshold": 0.8,
+        "burstiness_threshold": 0.3,
+        "punct_threshold": 0.02,
+        "ld_threshold": 0.5,
+        "ngram_threshold": 0.2,
+        "fw_threshold": 0.3,
+        "the_threshold": 0.35,
+        "abstract_threshold": 0.8,
+        "commitment_threshold": 0.05,
+        "ai_threshold": 0.35
+      },
+      "misses": [
+        {
+          "id": "human_019",
+          "true": 0,
+          "conf": 0.415
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "train_size": 45,
+      "test_size": 10,
+      "correct": 9,
+      "config": {
+        "narr_weight": 0.5,
+        "neg_weight": 0.3,
+        "three_list_weight": 0.2,
+        "cliche_weight": 5.0,
+        "pattern_threshold": 1.0,
+        "burstiness_threshold": 0.1,
+        "punct_threshold": 0.05,
+        "ld_threshold": 0.4,
+        "ngram_threshold": 0.8,
+        "fw_threshold": 0.4,
+        "the_threshold": 0.35,
+        "abstract_threshold": 0.7,
+        "commitment_threshold": 0.1,
+        "ai_threshold": 0.35
+      },
+      "misses": [
+        {
+          "id": "ai_002",
+          "true": 1,
+          "conf": 0.312
+        }
+      ]
+    }
+  ]
+}
