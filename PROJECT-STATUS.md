@@ -89,3 +89,11 @@ Full labelled inventory: `INDEX.md`. Canonical roadmap:
 `archive/legacy-ga/`. Result snapshots live in `experiments/results/` (active
 scripts write there). Root scripts are the active train→gate→optimize→deploy
 chain and cross-import `evolve_heldout.py` utilities.
+
+## Cross-lane state (2026-08-26)
+
+Track 1 miner: submission-ready, blocked only on registry YAML + wallet YAML.
+Track 2 fleet lane (separate repo /root/telegraph-lab): NUM family binaries
+built/verified/beaten-champions-proven; submission runbook handed to wallet
+lane; autoloop daemon live for verdict-driven evolution.
+Track 3 unslop agent: skeleton ready (slop_loop.py), opens post T1/T2.
