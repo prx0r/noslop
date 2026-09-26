@@ -90,10 +90,14 @@ Full labelled inventory: `INDEX.md`. Canonical roadmap:
 scripts write there). Root scripts are the active train→gate→optimize→deploy
 chain and cross-import `evolve_heldout.py` utilities.
 
-## Cross-lane state (2026-08-26)
+## Cross-lane state (2026-08-26 update)
 
-Track 1 miner: submission-ready, blocked only on registry YAML + wallet YAML.
-Track 2 fleet lane (separate repo /root/telegraph-lab): NUM family binaries
-built/verified/beaten-champions-proven; submission runbook handed to wallet
-lane; autoloop daemon live for verdict-driven evolution.
+Track 1 miner: **REGISTERED** via registerMiner on Diamond.
+- YAML: https://pub-307068a26c7b48ab80b3d2ccced8a7be.r2.dev/artifact/noslop-ai-text-detection.yaml
+- TX: 0x71e930f3599b78fc36bc6151c286edcfbe000917c0930c29e58f1903171098ac
+- feeAddress: 0x5D27FEE62c5EE46C6d7BEC2F572C8fCB7e389CdF
+- Status: awaiting node activation (~1 min)
+Track 2 fleet lane: 6 NUM binaries re-registered with corrected hashes
+(all6 TXs broadcast, awaiting eval). noslop_eval_v2 ACTIVE CHAMPION
+for AI_TEXT_DETECTION (reg=1122).
 Track 3 unslop agent: skeleton ready (slop_loop.py), opens post T1/T2.

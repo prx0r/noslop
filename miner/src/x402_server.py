@@ -32,10 +32,10 @@ from server import TAG_TO_KNOWLEDGE
 
 PORT = int(os.environ.get("PORT", 8090))
 PRICE = os.environ.get("NOSLOP_PRICE", "3000")  # $0.003 per detection
-PAY_TO = os.environ.get("NOSLOP_PAY_TO", "0x742d35Cc6634C0532925a3b844Bc9e7595f5b9Ae")
+PAY_TO = os.environ.get("NOSLOP_PAY_TO", "0x5D27FEE62c5EE46C6d7BEC2F572C8fCB7e389CdF")
 ASSET = "0x036CbD53842c5426634e7929541eC2318f3dCF7e"  # Base Sepolia USDC
 NETWORK = "eip155:84532"
-RESOURCE = f"http://localhost:{PORT}/v1/detect"
+RESOURCE = os.environ.get("NOSLOP_RESOURCE", f"http://138.199.223.35:{PORT}/v1/detect")
 MOCK = os.environ.get("MOCK_FACILITATOR", "1") == "1"
 FACILITATOR = os.environ.get("FACILITATOR_URL", "https://x402.org/facilitator")
 

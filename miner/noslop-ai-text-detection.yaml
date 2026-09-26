@@ -1,0 +1,72 @@
+version: "1"
+kind: miner
+slug: noslop-ai-text-detection
+name: NoSlop AI Text Detection
+description: Classifies whether a text passage is AI-generated or human-written, with calibrated confidence and per-pattern fix guidance.
+base_url: http://138.199.223.35:8090
+wallet_address: "0x5D27FEE62c5EE46C6d7BEC2F572C8fCB7e389CdF"
+fee_address: "0x5D27FEE62c5EE46C6d7BEC2F572C8fCB7e389CdF"
+
+auth:
+  type: none
+
+endpoints:
+  - path: /detect
+    external_path: /v1/detect
+    method: POST
+    description: AI text detection with pattern analysis and fix suggestions
+
+input_schema:
+  type: object
+  required: [text]
+  properties:
+    text:
+      type: string
+      description: The text passage to classify
+    regime:
+      type: string
+      enum: ["short", "long"]
+      description: "Detection regime: short = zero-tolerance, long = purpose-tested"
+      default: "long"
+
+output_schema:
+  type: object
+  required: [answer, confidence, status]
+  properties:
+    answer:
+      type: integer
+      enum: [0, 1]
+      description: "0 = human, 1 = AI-generated"
+    confidence:
+      type: number
+      description: Calibrated probability of answer=1
+    matches:
+      type: array
+      items:
+        type: object
+        properties:
+          tag:
+            type: string
+          line:
+            type: integer
+          matched_text:
+            type: string
+          why_slop:
+            type: string
+          suggested_repairs:
+            type: array
+            items:
+              type: string
+    guidance:
+      type: object
+      description: Per-pattern knowledge and fix guidance
+    status:
+      type: string
+      enum: [success, error]
+
+semantics:
+  signal_mapping:
+    confidence_field: confidence
+    label_field: answer
+  supported_intents:
+    - AI_TEXT_DETECTION
